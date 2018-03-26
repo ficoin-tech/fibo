@@ -26,7 +26,6 @@ class BuyProcessor {
             if (this._isGreaterThanZero(amountForBuy)) {
                 if (!this._isLocked) {
                     this._isLocked = true;
-                    //consider implement a queue for processing all prices
                     const boughtAmount = await this.exchange.buy(this.market, amountForBuy.toNumber(), price);
                     if (this._isGreaterThanZero(boughtAmount)) {
                         await this.ordersTracker.reduceBuyingAmount(price, boughtAmount);
