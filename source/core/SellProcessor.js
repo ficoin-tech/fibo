@@ -32,13 +32,6 @@ class SellProcessor {
                         this._isLocked = false;
                         const priceForBuy = price * this.multiplierNewBuyOrder;
                         await this.ordersTracker.addAmountForBuying(priceForBuy, soldAmount);
-                    // TODO insert row in table for filled order
-
-                    // const freshMoney = this._calculateFreshMoney(price, soldAmount);
-                    // console.log('=====================================');
-                    // console.log(freshMoney);
-                    // console.log('=====================================');
-                    // return freshMoney;
                     }
                     this._isLocked = false;
                 }
@@ -49,8 +42,6 @@ class SellProcessor {
             this.highestSell = price;
             log(`New highest sell price: ${price}`, { level: levels.EVERYTHING });
         }
-
-        // return 0;
     }
 
     _isGreaterThanZero(amount) {
