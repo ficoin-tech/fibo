@@ -1,0 +1,14 @@
+{
+  "name": "fibo",
+  "version": "1.0.0",
+  "dependencies": {
+    "binance-api-node": "^0.4.3",
+    "decimal.js": "^9.0.1",
+    "fs-extra": "^5.0.0",
+    "mysql2": "^1.5.1",
+    "sequelize": "^4.31.0"
+  },
+  "scripts": {
+    "start": "node source/starter.js"
+  }
+}
