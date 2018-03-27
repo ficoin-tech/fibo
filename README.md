@@ -25,7 +25,7 @@ FIBO is a command-line cryptocurrency trading bot using Node.js and MySQL.
 'INSERT INTO `fibo`.`sells` (`id`, `price`, `amount`, `market`, `createdAt`, `updatedAt`) VALUES ('1', '460', '1', 'ETHUSDT', '2018-03-27 11:11:11', '2018-03-27 11:11:11');'
 19. Add some more entries in the table, if you want. 
 20. Navigate to 'buys'
-21. Add order for selling using the query -- adjust the market, price and amount you want to buy, as you should know that this price is the highest price you will buy on
+21. Add order for buying using the query -- adjust the market, price and amount you want to buy, as you should know that this price is the highest price you will buy on
 'INSERT INTO `fibo`.`buys` (`id`, `price`, `amount`, `market`, `createdAt`, `updatedAt`) VALUES ('1', '440', '1', 'ETHUSDT', '2018-03-27 11:11:11', '2018-03-27 11:11:11');'
 22. Add some more entries in the table, if you want. 
 23. Use command 'npm start' in bash in the directory of fibo to start it.
